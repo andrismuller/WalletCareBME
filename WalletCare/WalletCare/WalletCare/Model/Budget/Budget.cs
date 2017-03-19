@@ -9,7 +9,19 @@ namespace WalletCare
     {
         private List<Interaction> interactions;
 
-        public List<WalletCare.Interaction> Interactions
+        public Categories Categories
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+
+            set
+            {
+            }
+        }
+
+        public int Name
         {
             get
             {

@@ -66,5 +66,17 @@ namespace WalletCare
             {
             }
         }
+
+        public int Category
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+
+            set
+            {
+            }
+        }
     }
 }

@@ -7,5 +7,18 @@ namespace WalletCare
 {
     public class Expense : Interaction
     {
+        private static List<string> CategoriesOfExpense;
+
+        public string Category
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+
+            set
+            {
+            }
+        }
     }
 }

@@ -1,24 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="WalletCare.Budget">
-    <Position X="3.75" Y="0.75" Width="1.5" />
+    <Position X="3.75" Y="0.5" Width="1.5" />
+    <AssociationLine Name="interactions" Type="WalletCare.Interaction" FixedFromPoint="true">
+      <Path>
+        <Point X="4.562" Y="1.796" />
+        <Point X="4.562" Y="2.25" />
+      </Path>
+    </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAEAAAAAAAAAAAEAA=</HashCode>
       <FileName>Model\Budget\Budget.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
-      <Property Name="Interactions" />
+      <Field Name="interactions" />
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="WalletCare.Income">
     <Position X="2" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAACAA=</HashCode>
       <FileName>Model\Budget\Income.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="WalletCare.Bill">
-    <Position X="2.25" Y="6" Width="1.5" />
+    <Position X="2.25" Y="7.75" Width="1.5" />
     <AssociationLine Name="PaymentData" Type="WalletCare.PaymentData">
       <MemberNameLabel ManuallyPlaced="true">
         <Position X="-1.192" Y="0.091" />
@@ -29,20 +35,20 @@
       <FileName>Model\Bill\Bill.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="Customer" />
       <Property Name="Provider" />
+      <Property Name="Customer" />
       <Property Name="PaymentData" />
     </ShowAsAssociation>
   </Class>
-  <Class Name="WalletCare.Address">
-    <Position X="1.75" Y="9.75" Width="1.5" />
+  <Class Name="WalletCare.Address" Collapsed="true">
+    <Position X="1.25" Y="10.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAgAAAAAAAAAIAAAAAAAAAAABAAIAAAAAAAA=</HashCode>
       <FileName>Model\Bill\Address.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="WalletCare.Provider">
-    <Position X="0.5" Y="7.5" Width="1.5" />
+  <Class Name="WalletCare.Provider" Collapsed="true">
+    <Position X="0.5" Y="9" Width="1.5" />
     <TypeIdentifier>
       <HashCode>QABAAAAAAAAAAAAAAACAAAQAAAAAAAACAAAAAAAAAAA=</HashCode>
       <FileName>Model\Bill\Provider.cs</FileName>
@@ -51,8 +57,8 @@
       <Property Name="Address" />
     </ShowAsAssociation>
   </Class>
-  <Class Name="WalletCare.Customer">
-    <Position X="2.25" Y="7.5" Width="1.5" />
+  <Class Name="WalletCare.Customer" Collapsed="true">
+    <Position X="2.25" Y="9" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAACAAAAAAAAAAA=</HashCode>
       <FileName>Model\Bill\Customer.cs</FileName>
@@ -61,8 +67,8 @@
       <Property Name="Address" />
     </ShowAsAssociation>
   </Class>
-  <Class Name="WalletCare.PaymentData">
-    <Position X="4.25" Y="7.5" Width="1.5" />
+  <Class Name="WalletCare.PaymentData" Collapsed="true">
+    <Position X="4.25" Y="9" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAQAAiIEIAAAAAAAAAAAAgAAEAAQA=</HashCode>
       <FileName>Model\Bill\PaymentData.cs</FileName>
@@ -71,14 +77,14 @@
   <Class Name="WalletCare.Expense">
     <Position X="5.75" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAQ=</HashCode>
       <FileName>Model\Budget\Expense.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="WalletCare.Interaction">
-    <Position X="3.75" Y="2.5" Width="1.5" />
+    <Position X="3.75" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAACAAAAAAAAAAAAAAAAEAAAAAAAAAAIgAAEAAAA=</HashCode>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAEAAAAAAAAAAIgAAEACAA=</HashCode>
       <FileName>Model\Budget\Interaction.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -86,14 +92,14 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="WalletCare.Repeat">
-    <Position X="6.25" Y="2.5" Width="2" />
+    <Position X="6.25" Y="2.25" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAAAABAAQAAAAAAAAAAAAAgAAAAAAAAEAAAQAAAAAA=</HashCode>
+      <HashCode>AAAAAAhAAQAAAAAAAAAAAAAgAAAAAAAAEQAAQAAAAAA=</HashCode>
       <FileName>Model\Repeat\Repeat.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="RepeatFrequency" />
       <Property Name="RepeatPeriod" />
+      <Property Name="RepeatFrequency" />
     </ShowAsAssociation>
   </Class>
   <Enum Name="WalletCare.Period">
