@@ -31,8 +31,22 @@
     <ConsolePause>false</ConsolePause>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Model\Budget\Interaction.cs" />
+    <Compile Include="Model\Budget\Expense.cs" />
+    <Compile Include="Model\Bill\Address.cs" />
+    <Compile Include="Model\Bill\Bill.cs" />
+    <Compile Include="Model\Budget\Budget.cs" />
+    <Compile Include="Model\Bill\Customer.cs" />
+    <Compile Include="Model\Budget\Income.cs" />
     <Compile Include="MyClass.cs" />
+    <Compile Include="Model\Bill\PaymentData.cs" />
+    <Compile Include="Model\Repeat\Period.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Model\Bill\Provider.cs" />
+    <Compile Include="Model\Repeat\Repeat.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
 </Project>
