@@ -7,52 +7,12 @@ namespace WalletCare
 {
     public class Address
     {
-        public string Town
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
+        public string Town { get; set; }
 
-            set
-            {
-            }
-        }
+        public string Street { get; set; }
 
-        public string Street
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
+        public string StreetNumber { get; set; }
 
-            set
-            {
-            }
-        }
-
-        public string StreetNumber
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-
-            set
-            {
-            }
-        }
-
-        public string ZipCode
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-
-            set
-            {
-            }
-        }
+        public string ZipCode { get; set; }
     }
 }

@@ -7,76 +7,16 @@ namespace WalletCare
 {
     public abstract class Interaction
     {
-        public int Value
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
+        public int Value { get; set; }
 
-            set
-            {
-            }
-        }
+        public string ImageReference { get; set; }
 
-        public string ImageReference
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
+        public DateTime TimeStamp { get; set; }
 
-            set
-            {
-            }
-        }
+        public string Note { get; set; }
 
-        public DateTime TimeStamp
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
+        public Repeat Repeat { get; }
 
-            set
-            {
-            }
-        }
-
-        public string Note
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-
-            set
-            {
-            }
-        }
-
-        public Repeat Repeat
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-
-            set
-            {
-            }
-        }
-
-        public int Category
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-
-            set
-            {
-            }
-        }
+        public int Category { get; set; }
     }
 }

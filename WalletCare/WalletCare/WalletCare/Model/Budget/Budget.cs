@@ -8,29 +8,24 @@ namespace WalletCare
     public class Budget
     {
         private List<Interaction> interactions;
+        private Dictionary<string, Bill> sampleBills;
+        private Provider myInvoiceData;
 
-        public Categories Categories
+        public int Name { get; set; }
+
+        public void addInteraction(Interaction interaction)
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-
-            set
-            {
-            }
+            interactions.Add(interaction);
         }
 
-        public int Name
+        public void saveBill(string key, Bill bill)
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
+            sampleBills.Add(key, bill);
+        }
 
-            set
-            {
-            }
+        public void setMyInvoiceData(Provider provider)
+        {
+            myInvoiceData = provider;
         }
     }
 }

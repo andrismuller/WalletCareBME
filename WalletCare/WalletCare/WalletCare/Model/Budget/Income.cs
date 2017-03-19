@@ -8,17 +8,22 @@ namespace WalletCare
     public class Income : Interaction
     {
         private static List<string> CategoriesOfIncome;
+        public string Category { get; set; }
+        private Bill bill;
 
-        public string Category
+        public Income()
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
+            CategoriesOfIncome.Add("Salary");
+            CategoriesOfIncome.Add("Other");
+        }
 
-            set
-            {
-            }
+        public Bill Bill { get { return bill; } }
+
+        public void setBill(Provider provider, Customer customer, PaymentData paymentData)
+        {
+            bill.setCustomer(customer);
+            bill.setPaymentData(paymentData);
+            bill.setProvider(provider);
         }
     }
 }

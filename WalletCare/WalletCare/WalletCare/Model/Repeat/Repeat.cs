@@ -7,88 +7,18 @@ namespace WalletCare
 {
     public class Repeat
     {
-        public DateTime EndDate
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
+        public DateTime EndDate { get; set; }
 
-            set
-            {
-            }
-        }
+        public Period RepeatPeriod { get; set; }
 
-        public Period RepeatPeriod
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
+        public Period RepeatFrequency { get; set; }
 
-            set
-            {
-            }
-        }
+        public int RepeatPeriodNumber { get; set; }
 
-        public Period RepeatFrequency
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
+        public int RepeatFrequencyNumber { get; set; }
 
-            set
-            {
-            }
-        }
+        public DateTime NextRepeatDate { get; set; }
 
-        public int RepeatPeriodNumber
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-
-            set
-            {
-            }
-        }
-
-        public int RepeatFrequencyNumber
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-
-            set
-            {
-            }
-        }
-
-        public DateTime NextRepeatDate
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-
-            set
-            {
-            }
-        }
-
-        public string Type
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-
-            set
-            {
-            }
-        }
+        public string Type { get; set; }
     }
 }

@@ -7,64 +7,14 @@ namespace WalletCare
 {
     public class Provider
     {
-        public string Name
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
+        public string Name { get; set; }
 
-            set
-            {
-            }
-        }
+        public Address Address { get; }
 
-        public Address Address
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
+        public string TaxIdentificationNumber { get; set; }
 
-            set
-            {
-            }
-        }
+        public string BankAccountNumber { get; set; }
 
-        public string TaxIdentificationNumber
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-
-            set
-            {
-            }
-        }
-
-        public string BankAccountNumber
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-
-            set
-            {
-            }
-        }
-
-        public string BusinessLicenseNumber
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-
-            set
-            {
-            }
-        }
+        public string BusinessLicenseNumber { get; set; }
     }
 }

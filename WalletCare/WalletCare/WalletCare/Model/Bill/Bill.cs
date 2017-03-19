@@ -7,40 +7,9 @@ namespace WalletCare
 {
     public class Bill
     {
-        public Provider Provider
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
+        public Provider Provider { get; set; }
+        public Customer Customer { get; set; }
+        public PaymentData PaymentData { get; set; }
 
-            set
-            {
-            }
-        }
-
-        public Customer Customer
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-
-            set
-            {
-            }
-        }
-
-        public PaymentData PaymentData
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-
-            set
-            {
-            }
-        }
     }
 }

@@ -8,17 +8,22 @@ namespace WalletCare
     public class Expense : Interaction
     {
         private static List<string> CategoriesOfExpense;
+        public string Category { get; set; }
 
-        public string Category
+        public Expense()
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-
-            set
-            {
-            }
+            CategoriesOfExpense = new List<string>();
+            CategoriesOfExpense.Add("Food");
+            CategoriesOfExpense.Add("Household");
+            CategoriesOfExpense.Add("Saving");
+            CategoriesOfExpense.Add("Goal");
+            CategoriesOfExpense.Add("Loan");
+            CategoriesOfExpense.Add("Children");
+            CategoriesOfExpense.Add("Entertainment");
+            CategoriesOfExpense.Add("Travel");
+            CategoriesOfExpense.Add("Holiday");
+            CategoriesOfExpense.Add("Other");
         }
+
     }
 }
