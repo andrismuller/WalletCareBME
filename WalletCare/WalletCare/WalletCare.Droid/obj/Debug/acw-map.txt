@@ -1,4 +1,0 @@
-WalletCare.Droid.MainActivity, WalletCare.Droid;md5ea7df8c59119eabd468786a76635f0a7.MainActivity
-WalletCare.Droid.MainActivity, WalletCare.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5ea7df8c59119eabd468786a76635f0a7.MainActivity
-WalletCare.Droid.MainActivity;md5ea7df8c59119eabd468786a76635f0a7.MainActivity
-walletcare.droid.MainActivity;md5ea7df8c59119eabd468786a76635f0a7.MainActivity

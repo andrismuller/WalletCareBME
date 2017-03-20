@@ -1,0 +1,4 @@
+C:\Users\Avantika\Source\Repos\WalletCareBME\WalletCare\BudgetModelPortableLibrary\bin\Debug\BudgetModelPortableLibrary.dll
+C:\Users\Avantika\Source\Repos\WalletCareBME\WalletCare\BudgetModelPortableLibrary\bin\Debug\BudgetModelPortableLibrary.pdb
+C:\Users\Avantika\Source\Repos\WalletCareBME\WalletCare\BudgetModelPortableLibrary\obj\Debug\BudgetModelPortableLibrary.dll
+C:\Users\Avantika\Source\Repos\WalletCareBME\WalletCare\BudgetModelPortableLibrary\obj\Debug\BudgetModelPortableLibrary.pdb

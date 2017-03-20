@@ -42,4 +42,3 @@ C:\Users\Avantika\Source\Repos\WalletCareBME\WalletCare\WalletCare\WalletCare.Dr
 C:\Users\Avantika\Source\Repos\WalletCareBME\WalletCare\WalletCare\WalletCare.Droid\obj\Debug\android\assets\WalletCare.dll.mdb
 C:\Users\Avantika\Source\Repos\WalletCareBME\WalletCare\WalletCare\WalletCare.Droid\obj\Debug\android\assets\WalletCare.Droid.dll.mdb
 C:\Users\Avantika\Source\Repos\WalletCareBME\WalletCare\WalletCare\WalletCare.Droid\obj\Debug\WalletCare.Droid.dll.mdb
-C:\Users\Avantika\Source\Repos\WalletCareBME\WalletCare\WalletCare\WalletCare.Droid\bin\Debug\WalletCare.Droid.dll.mdb
