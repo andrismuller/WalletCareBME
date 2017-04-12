@@ -13,13 +13,27 @@ namespace WalletCare.Droid
 	public class MainActivity : Activity
 	{
 		int count = 1;
+        RecyclerView mRecyclerView;
+        RecyclerView.LayoutManager mLayoutManager;
+        BudgetItemListAdapter mBudgetItemListAdapter;
+        Budget budget;
 
-		protected override void OnCreate (Bundle bundle)
+        protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
 
-			// Set our view from the "main" layout resource
-			SetContentView (Resource.Layout.Main);
+            budget = new Budget();
+            mBudgetItemListAdapter = new BudgetItemListAdapter(budget.interactions);
+            SetContentView(Resource.Layout.Main);
+
+            mLayoutManager = new LinearLayoutManager(this);
+            mRecyclerView.SetLayoutManager(layoutManager);
+
+            mRecyclerView = FindViewById<RecyclerView>(Resource.Id.recyclerView);
+            mRecyclerView.SetAdapter(mBudgetItemListAdapter);
+
+            // Set our view from the "main" layout resource
+            SetContentView (Resource.Layout.Main);
 
 			// Get our button from the layout resource,
 			// and attach an event to it

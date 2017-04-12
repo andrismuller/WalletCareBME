@@ -12,12 +12,12 @@ namespace WalletCare.Droid.BudgetList
 {
     class BudgetItemListAdapter : RecyclerView.Adapter
     {
-        public event EventHandler<Adapter1ClickEventArgs> ItemClick;
-        public event EventHandler<Adapter1ClickEventArgs> ItemLongClick;
-        IList<Interaction> interactions;
+        public event EventHandler<BudgetItemListAdapterClickEventArgs> ItemClick;
+        public event EventHandler<BudgetItemListAdapterClickEventArgs> ItemLongClick;
+        List<Interaction> interactions;
         
 
-        public BudgetItemListAdapter(IList<Interaction> interactions)
+        public BudgetItemListAdapter(List<Interaction> interactions)
         {
             this.interctions = interactions;
         }
@@ -28,28 +28,42 @@ namespace WalletCare.Droid.BudgetList
 
             //Setup your layout here
             View itemView = null;
-            //var id = Resource.Layout.__YOUR_ITEM_HERE;
-            //itemView = LayoutInflater.From(parent.Context).
-            //       Inflate(id, parent, false);
+            var id = Resource.Layout.InteractionLayout;
+            itemView = LayoutInflater.From(parent.Context).Inflate(id, parent, false);
 
-            var vh = new Adapter1ViewHolder(itemView, OnClick, OnLongClick);
+            var vh = new BudgetItemViewViewHolder(itemView, OnClick, OnLongClick);
             return vh;
         }
 
         // Replace the contents of a view (invoked by the layout manager)
         public override void OnBindViewHolder(RecyclerView.ViewHolder viewHolder, int position)
         {
-            var item = items[position];
+            var item = interactions[position];
 
             // Replace the contents of the view with that element
-            var holder = viewHolder as Adapter1ViewHolder;
-            //holder.TextView.Text = items[position];
+            var holder = viewHolder as BudgetItemViewViewHolder;
+            if (System.String.Compare(item.Category[0], "Expense") == 0)
+            {
+                holder.InteractionIconImageView.SetImageResource(Resource.Drawable.ic_attach_money_black_24dp.png);
+            }
+            else
+            {
+                holder.InteractionIconImageView.SetImageResource(Resource.Drawable.ic_attach_money_black_24dp.png);
+            }
+            
+            holder.InteractionTimestampTextView.Text = interactions[position].TimeStamp;
+            holder.InteractionValueTextView.Text = interactions[position].Value;
+            holder.InteractionCategoryTextView.Text = interactions[position].Category;
+            holder.InteractionNoteTextView.Text = interactions[position].Note;
+            /*holder.InteractionIconImageButton.setImageResource;
+            holder.InteractionIconImageButton;
+            holder.InteractionIconImageButton;*/
         }
 
-        public override int ItemCount => items.Length;
+        public override int ItemCount => interactions.Length;
 
-        void OnClick(Adapter1ClickEventArgs args) => ItemClick?.Invoke(this, args);
-        void OnLongClick(Adapter1ClickEventArgs args) => ItemLongClick?.Invoke(this, args);
+        void OnClick(BudgetItemListAdapterClickEventArgs args) => ItemClick?.Invoke(this, args);
+        void OnLongClick(BudgetItemListAdapterClickEventArgs args) => ItemLongClick?.Invoke(this, args);
 
     }
 

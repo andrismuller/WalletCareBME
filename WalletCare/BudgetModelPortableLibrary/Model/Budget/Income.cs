@@ -7,14 +7,11 @@ namespace WalletCare
 {
     public class Income : Interaction
     {
-        private static List<string> CategoriesOfIncome;
-        public string Category { get; set; }
         private Bill bill;
 
         public Income()
         {
-            CategoriesOfIncome.Add("Salary");
-            CategoriesOfIncome.Add("Other");
+
         }
 
         public Bill Bill { get { return bill; } }

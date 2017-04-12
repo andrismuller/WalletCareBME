@@ -17,6 +17,6 @@ namespace WalletCare
 
         public Repeat Repeat { get; }
 
-        public int Category { get; set; }
+        public string[] Category { get; set; }
     }
 }
